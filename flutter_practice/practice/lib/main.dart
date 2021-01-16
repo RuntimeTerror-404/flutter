@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.black26,
       ),
       body: Container(
-        child: Center(child: Text("Mohit Parashar")),
+        child: Center(child: Text("App developed by Mohit")),
       ),
     );
   }
