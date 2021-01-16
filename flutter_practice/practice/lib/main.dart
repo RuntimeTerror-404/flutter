@@ -20,35 +20,30 @@ class HomePage extends StatelessWidget {
         title: Center(child: Text("Hi Flutter")),
         backgroundColor: Colors.purple,
       ),
-      body: Center(
-        child: Container(
-          padding: const EdgeInsets.all(10),
-          alignment: Alignment.center,
-          // color: Colors.purple[200],
-          width: 200,
-          height: 150,
-          child: Text(
-            "This is a Box",
-            style: TextStyle(
-                color: Colors.black, fontSize: 25, fontWeight: FontWeight.bold,
-                textBaseline: TextBaseline.alphabetic),
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-              // shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                    color: Colors.grey[600],
-                    blurRadius: 10,
-                    offset: Offset(2.0, 5.0))
-              ],
-              color: Colors.teal,
-              gradient: LinearGradient(colors: [
-                Colors.redAccent,
-                // Colors.lightBlue[300],
-                Colors.greenAccent,
-                Colors.pink[400]
-              ])),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        color: Colors.black38,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.green,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.yellow,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.red,
+            )
+          ],
         ),
       ),
     );
